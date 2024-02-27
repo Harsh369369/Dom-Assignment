@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Showing Alerts</title>
+	</head>
+	<body>
+        <div>
+            <input id="firstNumber" type="number" placeholder="enter 1st Number">
+            <input id="secondNumber" type="number" placeholder="enter 2nd Number">
+        </div>
+        
+        <div>
+            <button onclick="add()">ADD</button>
+		    <button onclick="subtract()">SUBTRACT</button>
+		    <button onclick="multiply()">MULTIPLY</button>
+		    <button onclick="divide()">DIVIDE</button>
+        </div>
+		
+		<script type="text/javascript">
+            function add() {
+                let sum = parseInt(document.getElementById("firstNumber").value) + parseInt(document.getElementById("secondNumber").value);
+                alert(sum);
+                
+			}
+
+            function subtract() {
+                let subtract = parseInt(document.getElementById("firstNumber").value) - parseInt(document.getElementById("secondNumber").value);
+                alert(subtract);           
+            }
+
+            function multiply() {
+                let multiply = parseInt(document.getElementById("firstNumber").value) * parseInt(document.getElementById("secondNumber").value);
+                alert(multiply); 
+            }
+
+            function divide() {
+                let divide = parseInt(document.getElementById("firstNumber").value) / parseInt(document.getElementById("secondNumber").value);
+                alert(divide);   
+            }
+        </script>
+	</body>
+</html>
